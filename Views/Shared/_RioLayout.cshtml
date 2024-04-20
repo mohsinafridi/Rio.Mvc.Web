@@ -1,0 +1,28 @@
+﻿﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc.Presentation
+
+<!DOCTYPE html>
+
+<html>
+<head> 
+    <title>RIO Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <header>
+        @Html.Sitecore().Placeholder("header")
+    </header>
+    @Html.Sitecore().Placeholder("main")
+
+
+
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+    <!-- Homepage specific -->
+    <script src="layout/scripts/jquery.easypiechart.min.js"></script>
+</body>
+</html>
